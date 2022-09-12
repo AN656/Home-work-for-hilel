@@ -4,6 +4,7 @@ array1.unshift('lmao');
 array1.pop('lmao');
 array1.shift('lmao');
 console.log(array1);
+
 function num_to_month(num) 
 {
     switch(num)
@@ -46,13 +47,11 @@ function num_to_month(num)
             break;                                                               
     }
 }
+
 item1 = [10,'ifone0',5];
 item2 = [13, 'semseng',5];
 item3 = [8, 'nukio',5];
 console.log(item1[0]+item2[0]+item3[0], item1[item1.length - 1]);
 
-
-
 array2 = [1,2,3];
 console.log(array2.reverse());
-
