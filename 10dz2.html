@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .block1{
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            background-color: black;
+        }
+        .block2{
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            background-color: white;
+        }
+    </style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <div class="block1" id="b1"></div>
+    <div class="block2" id="b2" ></div>
+    <button id="b3">Нажми на меня</button>
+    <div id="text1" hidden>Спасибо</div>
+    <script type="module">
+        document.getElementById('b1').addEventListener("click",function()
+        {
+            document.getElementById('b1').style.backgroundColor = "#160fd6"
+        });
+        document.getElementById('b2').addEventListener("click",function()
+        {
+            document.getElementById('b2').style.backgroundColor = "#AA0000"
+        });
+        document.getElementById('b3').addEventListener("click",function()
+        {
+            document.getElementById('text1').hidden = false;
+        })
+    </script> 
+</body>
+</html>
