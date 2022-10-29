@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h1 id='title1'>1</h1>
+	<link rel="stylesheet" href="Style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title id='title1'>1</title>
+</head>
+<body>
+	<p><em><label id="genn1" class = "swipe_text"></label><label id="answer1" class = "swipe_text" hidden></label></em></p>
+	<input type="button" id="b1" value="Згенерувати" class = "button">
+	<p for="c1" class = "text" >Показувати відповідь<input type="checkbox" id="c1"></p>
+	<br>
+	<a href = "/index.html">Перейти до головної сторінки</a>
+	<script type = "module">
+		import {event,answer,page,pageShow} from './Generator.js'
+		pageShow(page);
+		b1.onclick = function()
+		{
+		    event(page.num);
+		}
+		c1.onclick = function()
+		{
+		    answer();
+		}
+	</script>
+</body>
+</html>
